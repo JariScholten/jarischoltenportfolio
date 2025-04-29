@@ -96,42 +96,122 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
+        company: "IntoAnalytics",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "Data Scientist",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+            At IntoAnalytics I focused on performing prescriptive,
+            descriptive, and predictive analysis. My work involved analyzing
+            data to provide actionable insights, using various analytical
+            models and techniques. I was responsible for driving the
+            analysis that informed decision-making, ensuring accurate
+            and relevant results for the business. My role as Data Engineer
+            within IntoData added to this role for a complete data project
+            cycle.
+          </>
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "IntoData",
+        timeframe: "2021 - Present",
+        role: "Data Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            At IntoData I worked as a data engineer where I was
+            responsible for designing, developing, and maintaining robust
+            data infrastructure and systems. My tasks included enabling
+            the efficient collection, storage, processing, and analysis of
+            large volumes of data. I built data pipelines, integrated various
+            data sources, transformed raw data into usable formats, and
+            ensured the quality and integrity of the data.
+          </>
+        ],
+        images: [],
+      },
+      {
+        company: "Philips",
+        timeframe: "2022 - 2023",
+        role: "Research & Development Intern",
+        achievements: [
+          <>
+            Conducted paper research to stay updated on the
+            latest computer vision techniques.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Annotated datasets to ensure high-quality input for
+            model training.
           </>,
+          <>
+            Developed and programmed computer vision
+            algorithms to be deployed in production
+            environments.
+          </>,
+          <>
+            Tested and refined algorithms to improve accuracy
+            and efficiency.
+          </>,
+          <>
+            Gained experience in working within a large corporate
+            structure, contributing to real-world projects.
+          </>
+        ],
+        images: [],
+      },
+      {
+        company: "IntoData",
+        timeframe: "2021 - 2021",
+        role: "Data Science Intern",
+        achievements: [
+          <>
+             Set up CI/CD pipelines to streamline development
+             and deployment processes.
+          </>,
+          <>
+            Developed and tested machine learning models for
+            predicting football game outcomes.
+          </>,
+          <>
+            Conducted data cleaning and preprocessing to
+            ensure high-quality datasets.
+          </>,
+          <>
+            Performed data analysis to derive insights and
+            improve model accuracy.
+          </>,
+          <>
+            Programmed and tested various components to
+            integrate machine learning operations within the
+            company’s infrastructure.
+          </>
+        ],
+        images: [],
+      },
+      {
+        company: "Lamb Weston Meijer",
+        timeframe: "2019 - 2020",
+        role: "Data Science Intern",
+        achievements: [
+          <>
+             Developed a sales prediction model to forecast client
+             demand in Italy.
+          </>,
+          <>
+            Analyzed historical sales data to identify trends and
+            patterns.
+          </>,
+          <>
+             Provided insights to help LWM make more accurate
+             decisions regarding product inventory.
+          </>,
+          <>
+             Collaborated with cross-functional teams to ensure
+              the model aligned with client needs and business
+              objectives.
+          </>
         ],
         images: [],
       },
@@ -142,12 +222,16 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Tilburg University",
+        description: <>Msc, Data Science and Society</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Fontys Hogeschool Eindhoven",
+        description: <>Bachelor's degree, ICT and Data Science</>,
+      },
+      {
+        name: "Scalda Vlissingen",
+        description: <>MBO degree, Software Development</>,
       },
     ],
   },
