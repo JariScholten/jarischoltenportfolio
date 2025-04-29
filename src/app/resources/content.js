@@ -130,7 +130,9 @@ const about = {
             ensured the quality and integrity of the data.
           </>
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
       },
       {
         company: "Philips",
@@ -159,7 +161,9 @@ const about = {
             structure, contributing to real-world projects.
           </>
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
       },
       {
         company: "IntoData",
@@ -188,7 +192,9 @@ const about = {
             company’s infrastructure.
           </>
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
       },
       {
         company: "Lamb Weston Meijer",
@@ -213,7 +219,15 @@ const about = {
               objectives.
           </>
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
