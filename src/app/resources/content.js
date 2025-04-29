@@ -1,16 +1,16 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Jari",
+  lastName: "Scholten",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Data Scientist",
+  avatar: "/images/3J7A1783.jpg",
+  email: "jari.scholten@gmail.com",
+  location: "Europe/Breda", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Dutch", "German"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -30,17 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/JariScholten",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    link: "https://www.linkedin.com/in/jari-scholten-2a3a56117/",
   },
   {
     name: "Email",
@@ -55,7 +50,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Data. Code. Insight.</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
@@ -63,8 +58,11 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+        Hi, I’m Jari — a curious and creative data science enthusiast who loves turning messy data into clear, actionable insights. 
+        <br/>I’ve worked on projects that span machine learning, data visualization, and statistical analysis, and I enjoy exploring how data can tell stories and solve real-world problems. 
+        <br/>Whether it's predicting trends, building models, or just diving deep into a new dataset, I’m always excited to learn and grow. 
+        <br/>This portfolio is a collection of some of my favorite projects—each one a step in my journey through the world of data.
+
     </>
   ),
 };
@@ -81,18 +79,15 @@ const about = {
   avatar: {
     display: true,
   },
-  calendar: {
-    display: true,
-    link: "https://cal.com",
-  },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Jari is a curious and creative data science enthusiast with a passion for turning messy data into clear, actionable insights. 
+        Their work spans machine learning, data visualization, and statistical analysis, with a strong focus on solving real-world problems through data. 
+        Always eager to explore new tools and techniques, they enjoy diving deep into datasets, uncovering patterns, and building models that drive understanding. 
+        This portfolio showcases a selection of their favorite projects—each reflecting their growth, curiosity, and love for data.
       </>
     ),
   },
