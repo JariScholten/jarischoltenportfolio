@@ -316,7 +316,7 @@ const gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
+      src: "/images/gallery/Zonnetje.jpg",
       alt: "image",
       orientation: "horizontal",
     },
