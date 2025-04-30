@@ -1,16 +1,16 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Jari",
+  lastName: "Scholten",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Data Scientist",
+  avatar: "/images/3J7A1783.jpg",
+  email: "jari.scholten@gmail.com",
+  location: "Europe/Amsterdam", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Dutch", "German"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -30,17 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/JariScholten",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    link: "https://www.linkedin.com/in/jari-scholten-2a3a56117/",
   },
   {
     name: "Email",
@@ -55,7 +50,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Data. Code. Insight.</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
@@ -63,8 +58,11 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+        Hi, I’m Jari — a curious and creative data science enthusiast who loves turning messy data into clear, actionable insights. 
+        <br/>I’ve worked on projects that span machine learning, data visualization, and statistical analysis, and I enjoy exploring how data can tell stories and solve real-world problems. 
+        <br/>Whether it's predicting trends, building models, or just diving deep into a new dataset, I’m always excited to learn and grow. 
+        <br/>This portfolio is a collection of some of my favorite projects—each one a step in my journey through the world of data.
+
     </>
   ),
 };
@@ -81,18 +79,15 @@ const about = {
   avatar: {
     display: true,
   },
-  calendar: {
-    display: true,
-    link: "https://cal.com",
-  },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Jari is a curious and creative data science enthusiast with a passion for turning messy data into clear, actionable insights. 
+        Their work spans machine learning, data visualization, and statistical analysis, with a strong focus on solving real-world problems through data. 
+        Always eager to explore new tools and techniques, they enjoy diving deep into datasets, uncovering patterns, and building models that drive understanding. 
+        This portfolio showcases a selection of their favorite projects—each reflecting their growth, curiosity, and love for data.
       </>
     ),
   },
@@ -101,18 +96,128 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
+        company: "IntoAnalytics",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "Data Scientist",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            At IntoAnalytics I focused on performing prescriptive,
+            descriptive, and predictive analysis. My work involved analyzing
+            data to provide actionable insights, using various analytical
+            models and techniques. I was responsible for driving the
+            analysis that informed decision-making, ensuring accurate
+            and relevant results for the business. My role as Data Engineer
+            within IntoData added to this role for a complete data project
+            cycle.
+          </>
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
+      },
+      {
+        company: "IntoData",
+        timeframe: "2021 - Present",
+        role: "Data Engineer",
+        achievements: [
+          <>
+            At IntoData I worked as a data engineer where I was
+            responsible for designing, developing, and maintaining robust
+            data infrastructure and systems. My tasks included enabling
+            the efficient collection, storage, processing, and analysis of
+            large volumes of data. I built data pipelines, integrated various
+            data sources, transformed raw data into usable formats, and
+            ensured the quality and integrity of the data.
+          </>
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
+      },
+      {
+        company: "Philips",
+        timeframe: "2022 - 2023",
+        role: "Research & Development Intern",
+        achievements: [
+          <>
+            Conducted paper research to stay updated on the
+            latest computer vision techniques.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Annotated datasets to ensure high-quality input for
+            model training.
           </>,
+          <>
+            Developed and programmed computer vision
+            algorithms to be deployed in production
+            environments.
+          </>,
+          <>
+            Tested and refined algorithms to improve accuracy
+            and efficiency.
+          </>,
+          <>
+            Gained experience in working within a large corporate
+            structure, contributing to real-world projects.
+          </>
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
+      },
+      {
+        company: "IntoData",
+        timeframe: "2021 - 2021",
+        role: "Data Science Intern",
+        achievements: [
+          <>
+             Set up CI/CD pipelines to streamline development
+             and deployment processes.
+          </>,
+          <>
+            Developed and tested machine learning models for
+            predicting football game outcomes.
+          </>,
+          <>
+            Conducted data cleaning and preprocessing to
+            ensure high-quality datasets.
+          </>,
+          <>
+            Performed data analysis to derive insights and
+            improve model accuracy.
+          </>,
+          <>
+            Programmed and tested various components to
+            integrate machine learning operations within the
+            company’s infrastructure.
+          </>
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
+      },
+      {
+        company: "Lamb Weston Meijer",
+        timeframe: "2019 - 2020",
+        role: "Data Science Intern",
+        achievements: [
+          <>
+             Developed a sales prediction model to forecast client
+             demand in Italy.
+          </>,
+          <>
+            Analyzed historical sales data to identify trends and
+            patterns.
+          </>,
+          <>
+             Provided insights to help LWM make more accurate
+             decisions regarding product inventory.
+          </>,
+          <>
+             Collaborated with cross-functional teams to ensure
+              the model aligned with client needs and business
+              objectives.
+          </>
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -124,22 +229,6 @@ const about = {
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
     ],
   },
   studies: {
@@ -147,12 +236,16 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Tilburg University",
+        description: <>Msc, Data Science and Society</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Fontys Hogeschool Eindhoven",
+        description: <>Bachelor's degree, ICT and Data Science</>,
+      },
+      {
+        name: "Scalda Vlissingen",
+        description: <>MBO degree, Software Development</>,
       },
     ],
   },
@@ -223,7 +316,7 @@ const gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
+      src: "/images/gallery/Zonnetje.jpg",
       alt: "image",
       orientation: "horizontal",
     },
