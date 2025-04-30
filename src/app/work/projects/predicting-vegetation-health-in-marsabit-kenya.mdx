@@ -1,16 +1,16 @@
 ---
 title: "Predicting Vegetation Health in Marsabit, Kenya"
 publishedAt: "2023-10-14"
-summary: "Explore the enduring debate between using spaces and tabs for code indentation, and why this choice matters more than you might think."
+summary: "The ecological well-being of Marsabit hangs in a delicate equilibrium, swayed by climate fluctuations and human activities. The ability to make dependable forecasts could have a profound impact, as it would furnish stakeholders with the necessary information to make well-informed choices."
 images:
   - "/images/projects/project-02/coverImage.png"
-  - "/images/projects/project-01/cover-02.png"
+  - "/images/projects/project-02/cover-02.png"
 team:
   - name: "Jari Scholten"
     role: "Data Scientist"
     avatar: "/images/avatar.jpg"
     linkedIn: "https://www.linkedin.com/in/jari-scholten-2a3a56117/"
-link: "https://once-ui.com/"
+link: ""
 ---
 
 ## Overview
@@ -19,26 +19,27 @@ In this project, I focused on automating the often tedious design handover proce
 
 ## Key Features
 
-- **Figma Plugin Integration**: Developed a custom Figma plugin that extracts design tokens such as colors, typography, and spacing values, and exports them in a format compatible with our codebase.
-- **Code Generation**: Integrated an automated process that translates Figma components into React code using a combination of design tokens and pre-built component templates. This allowed developers to focus more on logic and less on repetitive UI coding.
-- **Continuous Sync**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
-- **Scalable Design System**: Leveraged a design system that remains the single source of truth for both designers and developers, making it easy to maintain consistency even as the product evolves.
+- **Data Analysis**: Analyse the dataset for Missing values & Outliers.
+- **Visualization**: Visualize trends on monthly and yearly basis.
+- **Transformation & Imputation**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
+- **Feature Creation**: Creating new features that may improve model accuracy.
+- **Data Sourcing**: Sourcing 3rd party data that may improve our dataset.
+- **Model Creation**: Creating a LSTM model.
 
 ## Technologies Used
 
-- **Figma API**: For extracting design tokens and component data directly from the Figma designs.
-- **React and Next.js**: For building the front-end codebase with clean, reusable components.
-- **Styled-Components**: For managing styles dynamically using design tokens.
-- **GitHub Actions**: For automating the pipeline and syncing design changes to the repository.
+- **Python**: For analysis, visualization and model creation.
+- **FastAPI**: For building an endpoint to reach the model.
+- **MLFlow**: For model versioning. 
 
 ## Challenges and Learnings
 
-One of the biggest challenges was ensuring that the generated code was clean and maintainable. This involved setting up intelligent mapping between Figma components and React code structures, as well as managing edge cases like responsive design and conditional rendering. Additionally, the continuous synchronization required a robust error-handling system to prevent conflicts during development.
+This project aimed to predict vegetation health in Marsabit, Kenya using satellite (NDVI), weather, and agricultural data. One of the main challenges was dealing with outliers in the data and slight skewness in some variables, which made analysis more complex. Another issue was that agricultural data was only available for a short time, limiting how much it could contribute to the model. While the model performed very well, the low error rates raised concerns about possible overfitting. It was also a bit tricky to combine and align data from different sources and timeframes.
 
 ## Outcome
 
-The automated Figma to code pipeline has streamlined the handoff process, cutting down design-to-development time by 40%. Designers now have more confidence that their designs will be accurately translated into code, and developers can focus on more complex logic and feature development. This project has proven the value of automation in bridging the gap between design and development.
+Despite these challenges, the team learned a lot. Creating new features like NDVI Anomaly and Rate of Change helped capture meaningful patterns in vegetation health. It also became clear that soil moisture had a bigger effect on vegetation than weather conditions. Using a simpler model (Random Forest) before training the LSTM helped identify which data points were most useful. Transfer learning—retraining the model with a smaller, more focused dataset—gave even better results, reducing prediction errors significantly.
 
 ---
 
-This project demonstrates your ability to leverage automation and streamline workflows, which is highly relevant for design engineering portfolios focused on efficiency and innovation.
+In the end, the project successfully built a strong model that can predict vegetation health with high accuracy. It also showed how important good data and smart feature design are when using machine learning for environmental problems. Going forward, collecting more long-term data and testing the model in real-world conditions would be useful steps.
