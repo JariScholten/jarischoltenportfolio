@@ -316,7 +316,7 @@ const gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/Zonnetje.jpg",
+      src: "/images/gallery/IntoAnalytics 8.jpg",
       alt: "image",
       orientation: "horizontal",
     },
@@ -336,22 +336,22 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "/images/gallery/IMG_0111.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
+      src: "/images/gallery/IMG_0869.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
+      src: "/images/gallery/IMG_1051.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
+      src: "/images/gallery/IMG_8738.jpg",
       alt: "image",
       orientation: "vertical",
     },
