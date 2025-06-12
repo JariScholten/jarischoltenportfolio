@@ -1,0 +1,41 @@
+---
+title: "Navigating Traffic Accident Trends for a Safer Tomorrow"
+publishedAt: "2024-02-05"
+summary: "This project investigates traffic accident patterns in Catalonia using data science and AI techniques to understand causes, identify trends, and predict future accident frequencies. The ultimate goal was to generate actionable insights for improving road safety through data-driven decisions."
+images:
+  - "/images/projects/project-05/cover.png"
+  - "/images/projects/project-05/cover2.png"
+team:
+  - name: "Jari Scholten"
+    role: "Data Scientist"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/jari-scholten-2a3a56117/"
+link: ""
+---
+
+## Overview
+
+The study explored 12 years of traffic accident data from Catalonia (2010–2021), analyzing patterns in accident severity, timing, geography, and contributing factors. It combined statistical analysis, visual exploration, and forecasting via time-series modeling to help policymakers, urban planners, and safety advocates target high-risk periods and locations for intervention.
+
+## Key Features
+
+- **Data Analysis**: Analyse the dataset for Missing values & Outliers.
+- **Visualization**: Visualize trends on monthly and yearly basis.
+- **Transformation & Imputation**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
+- **Feature Creation**: Creating new features that may improve model accuracy.
+- **Data Sourcing**: Sourcing 3rd party data that may improve our dataset.
+- **Model Creation**: Creating a LSTM model.
+
+## Technologies Used
+
+- **Python**: For analysis, visualization and model creation.
+- **FastAPI**: For building an endpoint to reach the model.
+- **MLFlow**: For model versioning. 
+
+## Challenges and Learnings
+
+This project aimed to predict vegetation health in Marsabit, Kenya using satellite (NDVI), weather, and agricultural data. One of the main challenges was dealing with outliers in the data and slight skewness in some variables, which made analysis more complex. Another issue was that agricultural data was only available for a short time, limiting how much it could contribute to the model. While the model performed very well, the low error rates raised concerns about possible overfitting. It was also a bit tricky to combine and align data from different sources and timeframes.
+
+## Outcome
+
+The analysis revealed that severe accidents are more likely to occur on weekdays, in the morning and late afternoon, and in dense urban environments—especially at intersections and roundabouts. A SARIMAX forecasting model was built and validated, yielding a Mean Absolute Error of ~15 for monthly predictions, proving effective for anticipating accident volumes. Ultimately, the project delivered a robust, interpretable system for anticipating traffic risks and informing smarter infrastructure planning, public awareness campaigns, and policy changes to make Catalonia’s roads safer.
