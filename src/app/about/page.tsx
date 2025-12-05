@@ -255,7 +255,7 @@ export default function About() {
                     </Text>
                     {skill.images && skill.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
+                        {skill.images.map((image: { width: number; height: number; src: string; alt: string }, index) => (
                           <Flex
                             key={index}
                             border="neutral-medium"
