@@ -1,0 +1,53 @@
+---
+title: " FORECASTING CARBON EMISSIONS ACROSS CONTINENTS"
+publishedAt: "2023-12-29"
+summary: "This project focuses on forecasting global carbon emissions by analyzing historical data across continents and sectors. It combines exploratory data analysis with machine learning to understand emission trends and predict future outputs, aiming to support data-driven environmental policies."
+images:
+  - "/images/projects/project-04/cover.png"
+  - "/images/projects/project-04/cover2.png"
+team:
+  - name: "Jari Scholten"
+    role: "Data Scientist"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/jari-scholten-2a3a56117/"
+link: ""
+---
+
+## Overview
+
+The project, titled “Forecasting Carbon Emissions Across Continents”, analyzes CO₂ and GHG emissions by continent, sector, GDP, and per capita basis. It investigates trends, performs statistical analysis, and uses machine learning models to predict future emissions. The study emphasizes Asia’s rising contribution to global emissions and highlights differences between continents and sectors.
+
+
+## Key Features
+
+- **Exploratory Data Analysis (EDA)**: On emissions by continent, sector, and economic factors.
+- **Visualization**: Visualize trends.
+- **Temporal trend analysis**: Showcasing regional differences over time.
+- **Correlation studies**: Between CO₂, GHG, GDP, per capita emissions, and sectors.
+- **Anomaly detection**: Using interquartile ranges (IQR).
+- **Data imputation and preprocessing**: Strategies for incomplete datasets.
+- **Predictive modeling**: Creating a Random Forest and Gradient Boosting algorithm.
+
+## Technologies Used
+
+- **Python**: For analysis, visualization and model creation.
+- **Pandas / NumPy**: For data wrangling.
+- **Matplotlib / Seaborn / Plotly**: For visualization.
+- **MLFlow**: For model versioning. 
+- **Time-series linear interpolation**: For missing values.
+
+## Challenges and Learnings
+
+- **Missing Data**: GDP and sector data had gaps. Addressed via deletion (for countries with no data) and time-series interpolation.
+- **Data Consistency**: Ensured by validating trends across sectors and continents.
+- **Model Choice**: Chose simpler ML models over deep learning due to dataset size, learning that simpler models often outperform deep models on moderate-sized structured data.
+- **Interpretability vs Accuracy**: Balanced model performance with clarity for a non-technical audience.
+
+
+## Outcome
+
+The outcome of this project was both insightful and impactful. Through careful analysis, it became clear that Asia is rapidly becoming the dominant contributor to global carbon emissions, driven by fast-paced industrialization in countries like China and India. In contrast, Europe and North America, which once led in emissions, have shown signs of stabilization or decline—likely due to shifts toward renewable energy and stricter environmental regulations. By training machine learning models, specifically Random Forest and Gradient Boosting Regressors, I was able to accurately forecast future emission levels.
+
+---
+
+The models performed significantly better when enriched with sector-specific, GDP, and per capita data, achieving strong predictive accuracy. Beyond just modeling, the project also revealed meaningful patterns, such as the strong correlation between per capita emissions and specific sectors in different regions—highlighting the importance of both individual behavior and policy-level interventions. Ultimately, the project successfully translated complex data into actionable insights, supporting informed decision-making for climate strategies and offering a foundation for future research and policy development.
