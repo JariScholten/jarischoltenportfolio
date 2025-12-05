@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Data Scientist",
-  avatar: "/images/3J7A1783.jpg",
+  avatar: "/images/ProfilePic.jpg",
   email: "jari.scholten@gmail.com",
   location: "Europe/Amsterdam", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Dutch", "German"], // optional: Leave the array empty if you don't want to display languages
@@ -58,7 +58,7 @@ const home = {
   },
   subline: (
     <>
-        Hi, I’m Jari — a curious and creative data science enthusiast who loves turning messy data into clear, actionable insights. 
+        Hi, I’m Jari, a curious and creative data science enthusiast who loves turning messy data into clear, actionable insights. 
         <br/>I’ve worked on projects that span machine learning, data visualization, and statistical analysis, and I enjoy exploring how data can tell stories and solve real-world problems. 
         <br/>Whether it's predicting trends, building models, or just diving deep into a new dataset, I’m always excited to learn and grow. 
         <br/>This portfolio is a collection of some of my favorite projects—each one a step in my journey through the world of data.
@@ -85,9 +85,9 @@ const about = {
     description: (
       <>
         Jari is a curious and creative data science enthusiast with a passion for turning messy data into clear, actionable insights. 
-        Their work spans machine learning, data visualization, and statistical analysis, with a strong focus on solving real-world problems through data. 
-        Always eager to explore new tools and techniques, they enjoy diving deep into datasets, uncovering patterns, and building models that drive understanding. 
-        This portfolio showcases a selection of their favorite projects—each reflecting their growth, curiosity, and love for data.
+        His work spans machine learning, data visualization, and statistical analysis, with a strong focus on solving real-world problems through data. 
+        Always eager to explore new tools and techniques, he enjoys diving deep into datasets, uncovering patterns, and building models that drive understanding. 
+        This portfolio showcases a selection of his favorite projects, each reflecting his growth, curiosity, and love for data.
       </>
     ),
   },
@@ -254,35 +254,64 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Python",
+        description: <>Able to write Python code</>,
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+         
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Docker",
+        description: <>Able to write Python code</>,
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+         
+        ],
+      },
+      {
+        title: "Agile",
+        description: <>Able to write Python code</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+         
+        ],
+      },
+      {
+        title: "API Development",
+        description: <>Able to write Python code</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+         
+        ],
+      },
+      {
+        title: "Machine learning libraries such as: Tensorflow, Pytorch, Scikit-Learn",
+        description: <>Able to write Python code</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+         
+        ],
+      },
+      {
+        title: "MLOPS",
+        description: <>Able to write Python code</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+         
+        ],
+      },
+      {
+        title: "Computer Vision",
+        description: <>Experience building computer vision pipelines.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          // {
+          //   src: "/images/projects/project-01/cover-04.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
     ],
