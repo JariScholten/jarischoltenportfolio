@@ -1,0 +1,50 @@
+---
+title: "System Integration for Logistics Operations"
+publishedAt: "2024-11-01"
+summary: "A data engineering project focused on integrating multiple logistics systems—Manhattan, IFS, Titan, and RobEx—using Talend, Java, SQL, and Apache Artemis to enable seamless data flow across warehouse and supply chain operations."
+images:
+  - "/images/projects/project-01/cover-01.jpg"
+team:
+  - name: "Jari Scholten"
+    role: "Data Engineer"
+    avatar: "/images/ProfilePic.jpg"
+    linkedIn: "https://www.linkedin.com/in/jari-scholten-2a3a56117/"
+link: ""
+---
+
+## Overview
+
+This project involves designing and implementing a robust integration layer for a logistics client operating across multiple specialized systems. The client relies on Manhattan for warehouse management, IFS for enterprise resource planning, Titan for transport management, and RobEx for workforce and resource scheduling. Each system serves a critical function, but without proper integration, data silos and manual handovers slow down operations and introduce errors. The goal of this project is to create a seamless, automated data flow between these systems to ensure consistency, reliability, and real-time visibility across the entire logistics chain.
+
+## Key Features
+
+- **Multi-System Integration**: Connected four core logistics platforms—Manhattan, IFS, Titan, and RobEx—into a unified data ecosystem, eliminating manual data transfers and reducing operational delays.
+- **Message Brokering with Apache Artemis**: Implemented Apache Artemis as the central message broker, enabling reliable asynchronous communication between systems through publish/subscribe patterns and point-to-point messaging.
+- **API & Pub/Sub Communication**: Built RESTful APIs and pub/sub integrations to facilitate real-time data exchange, ensuring each system receives timely updates from the others.
+- **ETL Pipelines with Talend**: Developed Talend jobs to extract, transform, and load data between systems, handling format differences, business logic, and data validation.
+- **Custom Java Components**: Wrote custom Java code for complex transformation logic and to extend Talend capabilities where out-of-the-box components fell short.
+- **SQL-Based Data Operations**: Created SQL queries and stored procedures for data extraction, reconciliation, and reporting across integrated datasets.
+
+## Technologies Used
+
+- **Talend**: For building and orchestrating ETL pipelines across all four systems.
+- **Java**: For custom integration logic, data transformations, and extending pipeline functionality.
+- **SQL**: For querying, data validation, and cross-system data reconciliation.
+- **Apache Artemis**: As the message broker for asynchronous, event-driven communication between systems.
+- **REST APIs**: For synchronous system-to-system communication and data retrieval.
+- **Pub/Sub Messaging**: For decoupled, event-driven data distribution across services.
+
+## Challenges and Learnings
+
+- **Diverse System Landscapes**: Each system (Manhattan, IFS, Titan, RobEx) has its own data model, API conventions, and communication protocols. Mapping and translating data between these systems required careful analysis and thorough documentation.
+- **Ensuring Data Consistency**: With data flowing between multiple systems asynchronously, maintaining consistency and handling failures gracefully was a significant challenge. Implementing retry mechanisms and dead-letter queues in Apache Artemis helped mitigate data loss.
+- **Complex Business Logic**: The logistics domain involves intricate business rules around inventory, transport scheduling, and resource allocation. Translating these rules into integration logic required close collaboration with domain experts.
+- **Scalability & Reliability**: The integration layer needed to handle high message volumes during peak logistics operations without bottlenecks, which informed architectural decisions around message brokering and pipeline design.
+
+## Outcome
+
+The integration solution successfully connected all four logistics systems into a cohesive data flow, significantly reducing manual data entry and improving data accuracy across the organization. Real-time event-driven communication through Apache Artemis ensured that updates in one system—such as a new inbound shipment in Manhattan or a schedule change in RobEx—are immediately reflected in the relevant downstream systems. The Talend pipelines provided a maintainable and scalable foundation for ongoing data operations, while the custom Java components handled edge cases specific to the client's logistics processes.
+
+---
+
+The project demonstrated the value of a well-architected integration layer in complex logistics environments. By combining ETL tooling, custom code, and modern messaging infrastructure, the solution brought operational efficiency and data transparency to a multi-system landscape that previously relied on fragmented, manual processes.
