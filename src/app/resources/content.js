@@ -255,64 +255,58 @@ const about = {
     skills: [
       {
         title: "Python",
-        description: <>Able to write Python code</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-         
-        ],
+        description: <>Proficient in Python for data analysis, machine learning, scripting, and building end-to-end data pipelines. Experienced with libraries such as Pandas, NumPy, Matplotlib, and Seaborn for data manipulation and visualization.</>,
+        images: [],
+      },
+      {
+        title: "SQL",
+        description: <>Experienced in writing complex SQL queries for data extraction, transformation, and analysis across relational databases. Comfortable with joins, window functions, CTEs, and query optimization.</>,
+        images: [],
+      },
+      {
+        title: "Java",
+        description: <>Solid foundation in Java with experience in object-oriented programming, application development, and understanding of design patterns and software architecture principles.</>,
+        images: [],
+      },
+      {
+        title: "C++",
+        description: <>Familiar with C++ for performance-critical applications, with knowledge of memory management, data structures, and algorithms.</>,
+        images: [],
       },
       {
         title: "Docker",
-        description: <>Able to write Python code</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-         
-        ],
+        description: <>Experienced in containerizing applications and data pipelines using Docker. Skilled in writing Dockerfiles, managing multi-container setups with Docker Compose, and deploying reproducible environments for development and production.</>,
+        images: [],
       },
       {
         title: "Agile",
-        description: <>Able to write Python code</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-         
-        ],
+        description: <>Practiced in Agile methodologies including Scrum and Kanban. Experienced with sprint planning, daily stand-ups, retrospectives, and iterative delivery in cross-functional teams.</>,
+        images: [],
       },
       {
         title: "API Development",
-        description: <>Able to write Python code</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-         
-        ],
+        description: <>Experienced in designing and building RESTful APIs using frameworks such as FastAPI and Flask. Skilled in creating well-documented, scalable endpoints for serving data and machine learning models.</>,
+        images: [],
       },
       {
-        title: "Machine learning libraries such as: Tensorflow, Pytorch, Scikit-Learn",
-        description: <>Able to write Python code</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-         
-        ],
+        title: "Machine Learning (TensorFlow, PyTorch, Scikit-Learn)",
+        description: <>Hands-on experience building, training, and evaluating machine learning models for classification, regression, and deep learning tasks. Proficient in model selection, hyperparameter tuning, and deploying models into production.</>,
+        images: [],
       },
       {
-        title: "MLOPS",
-        description: <>Able to write Python code</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-         
-        ],
+        title: "MLOps",
+        description: <>Skilled in operationalizing machine learning workflows, including model versioning, experiment tracking, CI/CD for ML pipelines, and monitoring model performance in production environments.</>,
+        images: [],
+      },
+      {
+        title: "Apache Airflow",
+        description: <>Experienced in orchestrating and scheduling complex data workflows using Apache Airflow. Skilled in building DAGs, managing task dependencies, and automating ETL pipelines.</>,
+        images: [],
       },
       {
         title: "Computer Vision",
-        description: <>Experience building computer vision pipelines.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          // {
-          //   src: "/images/projects/project-01/cover-04.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        description: <>Experience building computer vision pipelines for tasks such as image segmentation, object detection, and classification. Worked on real-world applications including medical imaging at Philips R&D.</>,
+        images: [],
       },
     ],
   },
