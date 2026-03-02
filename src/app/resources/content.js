@@ -15,7 +15,7 @@ const person = {
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
   description: (
     <>
       I occasionally write about design, technology, and share thoughts on the intersection of
@@ -60,7 +60,7 @@ const home = {
     <>
         Hi, I’m Jari, a curious and creative data science enthusiast who loves turning messy data into clear, actionable insights. 
         <br/>I’ve worked on projects that span machine learning, data visualization, and statistical analysis, and I enjoy exploring how data can tell stories and solve real-world problems. 
-        <br/>Whether it's predicting trends, building models, or just diving deep into a new dataset, I’m always excited to learn and grow. 
+        <br/>Whether it&apos;s predicting trends, building models, or just diving deep into a new dataset, I’m always excited to learn and grow. 
         <br/>This portfolio is a collection of some of my favorite projects—each one a step in my journey through the world of data.
 
     </>
@@ -241,7 +241,7 @@ const about = {
       },
       {
         name: "Fontys Hogeschool Eindhoven",
-        description: <>Bachelor's degree, ICT and Data Science</>,
+        description: <>Bachelor&apos;s degree, ICT and Data Science</>,
       },
       {
         name: "Scalda Vlissingen",
