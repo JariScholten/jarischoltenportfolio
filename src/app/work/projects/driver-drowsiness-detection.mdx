@@ -1,0 +1,53 @@
+---
+title: "Real-Time Driver Drowsiness Detection"
+publishedAt: "2024-11-01"
+summary: "A machine learning project that detects driver drowsiness in real time using a webcam, MediaPipe Face Mesh for facial landmark extraction, and a scikit-learn classifier trained on Eye Aspect Ratio (EAR) and Mouth Aspect Ratio (MAR) features."
+images:
+  - "/images/projects/project-06/drowsy.gif"
+team:
+  - name: "Jari Scholten"
+    role: "ML Engineer"
+    avatar: "/images/ProfilePic.jpg"
+    linkedIn: "https://www.linkedin.com/in/jari-scholten-2a3a56117/"
+link: ""
+---
+
+## Overview
+
+Drowsy driving is a leading cause of traffic accidents worldwide. This project tackles the problem by building an end-to-end machine learning system that monitors a driver's face through a standard webcam and classifies their alertness state in real time. The pipeline spans from data acquisition and model training through to a live inference application. Facial landmarks are extracted using Google's MediaPipe Face Mesh, from which two biometric signals—Eye Aspect Ratio (EAR) and Mouth Aspect Ratio (MAR)—are computed and fed into a trained classifier. The system provides immediate visual feedback, displaying an "Alert" or "Drowsy" label overlaid on the camera feed along with confidence scores and live metric values.
+
+## Key Features
+
+- **End-to-End ML Pipeline**: A complete workflow covering data loading, exploratory data analysis, feature scaling, model training with cross-validation, evaluation, and model persistence—all orchestrated through a single training script.
+- **Multi-Model Benchmarking**: Four classifiers—Logistic Regression, Random Forest, SVM (RBF kernel), and Gradient Boosting—are trained and evaluated side by side using stratified 5-fold cross-validation, with the best model selected automatically by test F1 score.
+- **Real-Time Webcam Inference**: A live application captures webcam frames, detects facial landmarks with MediaPipe Face Mesh, computes EAR and MAR on each frame, and runs the trained model for instant drowsiness prediction.
+- **Temporal Smoothing**: A rolling average over 7 frames (~0.23 seconds at 30 FPS) smooths out noisy per-frame predictions, preventing flickering labels while still reacting quickly to genuine state changes.
+- **Visual Overlay**: The camera feed is augmented with a face mesh tesselation, a color-coded state label (green for Alert, red for Drowsy), prediction confidence percentage, and live EAR/MAR values for full transparency into the system's reasoning.
+- **Automated EDA & Reporting**: The training pipeline generates distribution plots, scatter plots, a correlation heatmap, confusion matrices, and ROC curves—saved as images for quick model assessment.
+
+## Technologies Used
+
+- **Python**: Core language for the entire pipeline, from data processing to real-time inference.
+- **scikit-learn**: For model training (Logistic Regression, Random Forest, SVM, Gradient Boosting), preprocessing (StandardScaler), evaluation metrics, and cross-validation.
+- **MediaPipe Face Mesh**: Google's real-time facial landmark detection solution, providing 468 3D face landmarks used to compute EAR and MAR from webcam frames.
+- **OpenCV**: For webcam capture, frame processing, image flipping, and rendering the visual overlay with text and annotations.
+- **pandas & NumPy**: For data loading, manipulation, and numerical computation throughout the pipeline.
+- **matplotlib & seaborn**: For generating EDA visualizations, confusion matrices, and ROC curve plots.
+- **joblib**: For serializing and deserializing the trained model artifact (model + scaler) to disk.
+- **Kaggle Hub**: For programmatic download of the training dataset directly from Kaggle.
+
+## Challenges and Learnings
+
+- **Bridging Offline and Real-Time Domains**: The training data consists of pre-computed EAR and MAR values, but the real-time app must compute these from raw facial landmarks. Ensuring the MediaPipe-derived features match the distribution the model was trained on required careful landmark selection and ratio calculation.
+- **Reducing Prediction Flicker**: Raw per-frame predictions are noisy—small facial movements or lighting changes can cause rapid label switching. Implementing a rolling average buffer over 7 frames provided the right balance between responsiveness and stability.
+- **Handling Face Loss Gracefully**: When the driver's face temporarily leaves the frame or detection fails, stale EAR/MAR values in the smoothing buffer could produce misleading predictions. Clearing the buffers on face loss and displaying a distinct "No face detected" state prevents false alerts.
+- **Feature Engineering with Facial Landmarks**: Computing EAR requires selecting the correct six landmark indices per eye from MediaPipe's 468-point mesh and applying the correct geometric formula. Similarly, MAR uses specific lip and mouth corner landmarks. Getting these mappings right was essential for accurate predictions.
+- **Model Selection Trade-offs**: While Gradient Boosting and Random Forest typically achieved the highest F1 scores, the evaluation framework made it easy to compare all four classifiers and select the best performer automatically, reinforcing the value of systematic benchmarking.
+
+## Outcome
+
+The final system delivers a fully functional real-time drowsiness detection application that runs on consumer hardware with just a standard webcam. The training pipeline evaluates multiple classifiers and persists the best-performing model, which the live app loads and uses for inference. During operation, the system processes webcam frames at near-real-time speeds, drawing a face mesh overlay and displaying the predicted alertness state with confidence scores. When a driver closes their eyes or yawns, the system detects the change in EAR and MAR values and transitions to a "Drowsy" warning within a fraction of a second. The modular architecture—separate scripts for data download, training, inference, and the live app—ensures each component can be independently updated or extended.
+
+---
+
+This project demonstrates how classical machine learning techniques, combined with modern computer vision tools like MediaPipe, can produce a practical safety application. By keeping the feature space compact (just two ratios) and the model lightweight, the system achieves real-time performance without requiring a GPU, making it accessible for deployment in everyday driving scenarios.
