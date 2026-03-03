@@ -221,12 +221,12 @@ const about = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
     ],
@@ -255,7 +255,7 @@ const about = {
     skills: [
       {
         title: "Python",
-        description: <>Proficient in Python for data analysis, machine learning, scripting, and building end-to-end data pipelines. Experienced with libraries such as Pandas, NumPy, Matplotlib, and Seaborn for data manipulation and visualization.</>,
+        description: <>Proficient in Python for data analysis, machine learning, scripting, and building end-to-end data pipelines.</>,
         images: [],
       },
       {
@@ -270,12 +270,12 @@ const about = {
       },
       {
         title: "C++",
-        description: <>Familiar with C++ for performance-critical applications, with knowledge of memory management, data structures, and algorithms.</>,
+        description: <>Familiar with C++ through software development during Bachelor's degree.</>,
         images: [],
       },
       {
         title: "Docker",
-        description: <>Experienced in containerizing applications and data pipelines using Docker. Skilled in writing Dockerfiles, managing multi-container setups with Docker Compose, and deploying reproducible environments for development and production.</>,
+        description: <>Experienced in containerizing applications and data pipelines using Docker. Skilled in writing Dockerfiles, and deploying reproducible environments for development.</>,
         images: [],
       },
       {
@@ -300,7 +300,7 @@ const about = {
       },
       {
         title: "Apache Airflow",
-        description: <>Experienced in orchestrating and scheduling complex data workflows using Apache Airflow. Skilled in building DAGs, managing task dependencies, and automating ETL pipelines.</>,
+        description: <>Experienced in orchestrating and scheduling data workflows using Apache Airflow. Skilled in building DAGs, managing task dependencies, and automating ETL pipelines.</>,
         images: [],
       },
       {
@@ -344,12 +344,12 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
+      src: "/images/gallery/image.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
+      src: "/images/gallery/image2.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
