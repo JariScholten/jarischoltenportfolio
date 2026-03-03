@@ -270,7 +270,7 @@ const about = {
       },
       {
         title: "C++",
-        description: <>Familiar with C++ through software development during Bachelor's degree.</>,
+        description: <>Familiar with C++ through software development during Bachelor&apos;s degree.</>,
         images: [],
       },
       {
