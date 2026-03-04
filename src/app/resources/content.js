@@ -351,12 +351,12 @@ const gallery = {
     {
       src: "/images/gallery/image2.jpeg",
       alt: "image",
-      orientation: "horizontal",
+      orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
+      src: "/images/gallery/image3.jpeg",
       alt: "image",
-      orientation: "horizontal",
+      orientation: "vertical",
     },
     {
       src: "/images/gallery/IMG_0111.jpg",
